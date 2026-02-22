@@ -9,7 +9,7 @@ class TotalSudokus(Range):
 
     display_name = "Total Sudokus"
     range_start = 5
-    range_end = 30
+    range_end = 50
     default = 10
 
 

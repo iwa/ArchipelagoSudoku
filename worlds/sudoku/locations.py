@@ -7,7 +7,7 @@ class SudokuLocation(Location):
     game: str = "Sudoku"
 
 
-def get_locations(max_sudokus: int = 30) -> Dict[str, int]:
+def get_locations(max_sudokus: int = 50) -> Dict[str, int]:
     """Real locations that hold pool items."""
     return {f"Sudoku {i + 1}": i for i in range(max_sudokus)}
 
