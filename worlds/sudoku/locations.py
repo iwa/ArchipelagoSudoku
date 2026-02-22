@@ -2,8 +2,6 @@ from typing import Dict
 
 from BaseClasses import Location
 
-BASE_ID = 948000
-
 
 class SudokuLocation(Location):
     game: str = "Sudoku"
@@ -11,7 +9,7 @@ class SudokuLocation(Location):
 
 def get_locations(max_sudokus: int = 30) -> Dict[str, int]:
     """Real locations that hold pool items."""
-    return {f"Sudoku {i + 1}": BASE_ID + i for i in range(max_sudokus)}
+    return {f"Sudoku {i + 1}": i for i in range(max_sudokus)}
 
 
 def get_event_locations(num_sudokus: int) -> list[str]:
