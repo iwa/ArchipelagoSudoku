@@ -34,7 +34,7 @@ class SudokuWorld(World):
     topology_present = False
 
     item_name_to_id = {name: data.code for name, data in item_table.items()}
-    location_name_to_id = {name: loc_id for name, loc_id in get_locations(max_sudokus=30).items()}
+    location_name_to_id = {name: loc_id for name, loc_id in get_locations(max_sudokus=50).items()}
 
     def create_regions(self) -> None:
         num_sudokus = self.options.total_sudokus.value
